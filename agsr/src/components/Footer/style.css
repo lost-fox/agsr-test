@@ -1,0 +1,148 @@
+.footer-container{
+   margin: 0 auto;
+   padding: 80px 115px;
+   max-width: 1400px;
+   height: 478px;
+}
+
+.footer-top{
+   justify-content: flex-start;
+}
+
+.footer-general-info{
+   margin-right: 39px;
+}
+
+.footer-general-info__text{
+   margin-top: 20px;
+   width: 241px;
+
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 150%;
+   color: #676A71;
+}
+
+.footer-developer{
+   margin-top: 40px;
+   width: 361px;
+}
+
+.footer-developer__title{
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+   color: #4D4D4F;
+}
+
+.footer-developer__company{
+   margin: 10px 0 5px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+   color: #676A71;
+}
+
+.footer-developer__address{
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+   color: #A8AAAE;
+}
+
+.footer-info{
+   width: 124px;
+   margin-right: 76px;
+}
+
+.footer-info__title{
+   margin-bottom: 20px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 25px;
+   color: #231F20;
+}
+
+.footer-info__menu-item{
+   margin-top: 10px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+}
+
+.footer-info__menu-item a {
+   color: #4D4D4F;
+}
+
+.footer-support{
+   width: 270px;
+   margin-right: 30px;
+}
+
+.footer-support__title, .footer-contacts__title{
+   margin-bottom: 20px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 25px;
+   color: #231F20;
+}
+
+.footer-support__info{
+   margin-bottom: 10px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 21px;
+   color: #676A71;
+}
+
+.footer-hr{
+   border: none;
+   height: 1px;
+   background-color: #EDEDF4;
+   border-radius: 3px;
+}
+
+.footer-data{
+   display: block;
+   margin-top: 10px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+   color: #4D4D4F;
+}
+
+.footer-contacts{
+   width: 270px;
+}
+
+.footer-contacts__link{
+   margin-top: 10px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+   text-decoration-line: underline;
+   color: #009CB4;
+}
+
+.footer-copyright{
+   padding-top: 40px;
+}
+
+.footer-copyright__text{
+   margin-top: 20px;
+   text-align: center;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+   color: #C6C6C6;
+}
