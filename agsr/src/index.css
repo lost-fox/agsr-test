@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
 /* Указываем box sizing */
 *,
 *::before,
@@ -79,8 +79,7 @@ select {
 }
 
 body {
-  width: 90%;
-  margin: 0 auto;
+  background-color: #ffffff;
   font-family: 'Manrope', sans-serif;
 }
 
