@@ -93,7 +93,7 @@ a {
   text-decoration: none;
 }
 
-hr{
+hr {
   margin: 0;
 }
 
@@ -102,14 +102,22 @@ body {
   font-family: 'Manrope', sans-serif;
 }
 
-.flex{  
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #231F20;
+}
+
+.flex {  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-button{
+button {
   border: none;
   outline: none; 
 }

@@ -1,8 +1,27 @@
 import mainImg from "../../assets/img/info-background.png";
 import { Search } from "../../components/Search";
+import { useAppDispatch } from "../../hooks/stateHooks";
+import { setRegistries } from "../../state/registriesSlice";
+import registries from "../../data/registries.json";
+import news from "../../data/news.json";
+import docs from "../../data/docs.json";
+import question from "../../data/question.json";
 import "./style.css";
+import { useEffect } from "react";
+import { setNews } from "../../state/newsSlice";
+import { setDocs } from "../../state/docsSlice";
+import { setQuestions } from "../../state/questionsSlice";
 
 export const Main: React.FC = () => {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(setRegistries(registries));
+    dispatch(setNews(news));
+    dispatch(setDocs(docs));
+    dispatch(setQuestions(question));
+  }, [dispatch]);
+
   return (
     <div className="main-container">
       <div className="main-info flex">

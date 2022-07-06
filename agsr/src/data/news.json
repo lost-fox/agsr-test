@@ -1,42 +1,42 @@
 [
    {
       "id": 1,
-      "img-url": "../assets/img/news/engineering_work.png",
+      "img_url": "../assets/img/news/engineering_work.png",
       "title": "Технические работы 30.05.2022",
       "date": "30.05.2022",
       "info": "В связи с проведением технических работ 30.05.2022 с 15:00 могут наблюдаться пер..."
    },
    {
       "id": 2,
-      "img-url": "../assets/img/news/attention.png",
+      "img_url": "../assets/img/news/attention.png",
       "title": "Изменение справочника",
       "date": "28.05.2022",
       "info": "Обращаем внимание, что с 28.05.2022 внесены изменения в справочник 'Дей..."
    },
    {
       "id": 3,
-      "img-url": "../assets/img/news/engineering_work.png",
+      "img_url": "../assets/img/news/engineering_work.png",
       "title": "Технические работы 26.05.2022",
       "date": "26.05.2022",
       "info": "В связи с проведением технических работ 26.05.2022 с 21:00 могут наблюдаться пер..."
    },
    {
       "id": 4,
-      "img-url": "../assets/img/news/license.png",
+      "img_url": "../assets/img/news/license.png",
       "title": "Лицензирование в Беларуси",
       "date": "25.05.2022",
       "info": "Лицензирование затрагивает отдельные виды деятельности в Республике Беларус..."
    },
    {
       "id": 5,
-      "img-url": "../assets/img/news/card.png",
+      "img_url": "../assets/img/news/card.png",
       "title": "Тестирование системы новостей Ед...",
       "date": "20.05.2022",
       "info": "Тестирование системы новостей ЕРЛ."
    },
    {
       "id": 6,
-      "img-url": "../assets/img/news/update.png",
+      "img_url": "../assets/img/news/update.png",
       "title": "Обновление версии реестра ПО",
       "date": "18.05.2022",
       "info": "В новой версии доступны новые функции, которые упрощают использование сервис..."
