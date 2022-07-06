@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import { setNews } from "../../state/newsSlice";
 import { setDocs } from "../../state/docsSlice";
 import { setQuestions } from "../../state/questionsSlice";
+import { Registries } from "./Registries";
 
 export const Main: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -53,6 +54,7 @@ export const Main: React.FC = () => {
           <img src={mainImg} alt="main background img" />
         </div>
       </div>
+      <Registries />
     </div>
   );
 };

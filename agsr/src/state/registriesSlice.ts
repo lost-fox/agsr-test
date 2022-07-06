@@ -1,12 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RegistriesType } from "../interfaces/RegistriesType";
+import { INITIAL_REGISTRIES } from "../constants";
 
 interface InitialStateType {
-  registries: string | RegistriesType;
+  registries: RegistriesType[];
 }
 
 const initialState: InitialStateType = {
-  registries: "",
+  registries: INITIAL_REGISTRIES,
 };
 
 const registriesSlice = createSlice({

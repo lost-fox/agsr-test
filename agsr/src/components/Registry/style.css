@@ -1,0 +1,42 @@
+.regictry{
+   padding: 20px 0px;
+   border-bottom: 1px solid #EDEDF4;
+   align-items: center;
+}
+
+.regictry__item{
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 22px;
+   color: #4D4D4F
+}
+
+.regictry__reg-number{
+   padding-left: 34px;
+   width: 188px;
+}
+
+.regictry__name-software{
+   padding-left: 34px;
+   width: 267px;
+}
+
+.regictry__class-code{
+   width: 57px;
+}
+
+.regictry__class-software{
+   width: 173px;   
+   padding-right: 7px;
+}
+
+.regictry__date{
+   width: 108px;
+}
+
+.regictry__url{
+   width: 77px;
+   text-decoration-line: underline;
+   color: #009CB4;
+}

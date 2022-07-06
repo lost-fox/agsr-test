@@ -1,0 +1,148 @@
+.registries-container{
+   margin: 0 auto;
+   max-width: 1400px;
+}
+.registries-title__filters{
+   margin-top: 9px;
+   width: 84px;
+   height: 32px;
+   align-items: center;
+}
+
+.registries-title__filter{
+   width: 32px;
+   height: 32px;
+   background-color: #ffffff;
+}
+
+.registries-title__filter-three-dots{
+   margin: 0 auto;
+}
+
+.registries-elements{
+   margin: 40px auto;
+   border-top: 1px solid #EDEDF4;
+}
+
+.registries-elements__categories{
+   padding: 20px 0;
+   flex-wrap: nowrap;
+}
+
+.category__button{
+   display: block;
+   width: 34px;
+   background-color: #ffffff;
+   cursor: pointer;
+}
+
+.category__button-icon{
+   width: 20px;
+   height: 11px;
+   transform: rotate(-90deg);
+}
+
+.category{
+   height: 44px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 22px;
+   color: #009CB4;
+}
+
+.category__buttons{
+   flex-wrap: nowrap;
+}
+
+.category__reg-number{
+   width: 188px;
+}
+
+.category__name-software{
+   width: 267px;
+}
+
+.category__class-code{
+   width: 57px;
+}
+
+.category__class-software{
+   width: 173px;
+}
+
+.category__date{
+   width: 108px;
+}
+
+.category__url{
+   width: 77px;
+}
+
+.registries-pagination{
+   margin: 40px auto 80px;
+}
+
+.pagination{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 488px;
+   height: 40px;
+   border: 1px solid #EDEDF4;
+   border-radius: 5px;
+}
+
+.pagination__pages{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 410px;
+}
+
+.pagination-arrow{
+   background-color: #ffffff;
+}
+
+.pagination-arrow__arrow{
+   width: 32px;
+}
+
+.pagination-page{
+   padding-top: 9px;
+   width: 40px;
+   height: 40px;
+   display: inline-block;
+   text-align: center;
+}
+
+.pagination-page--active{
+   background-color: #009CB4;
+   border-radius: 2px;
+}
+
+.pagination-page__prev{
+   margin: auto 10px;
+   color: transparent;
+   background: url(../../../assets/icon/upper-arrow.svg) no-repeat center center;
+}
+
+.pagination-page__break{
+   padding-top: 9px;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+}
+
+.pagination-page__next{
+   margin: auto 10px;
+   color: transparent;
+   background: url(../../../assets/icon/upper-arrow.svg) no-repeat center center;
+   transform: rotate(-180deg);
+}
+
+.pagination-arrow:disabled, .pagination-page--disabled{
+   opacity: 0.5;
+}

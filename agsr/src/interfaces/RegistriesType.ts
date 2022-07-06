@@ -1,4 +1,4 @@
-export interface Registries {
+export interface RegistriesType {
   id: number;
   title: string;
   code: string;
@@ -7,6 +7,6 @@ export interface Registries {
   url: string;
 }
 
-export interface RegistriesType {
-  registries: Registries[];
+export interface RegistriesTypeProps {
+  value: RegistriesType;
 }
