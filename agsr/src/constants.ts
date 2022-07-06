@@ -9,4 +9,14 @@ const INITIAL_REGISTRIES = [
   },
 ];
 
-export { INITIAL_REGISTRIES };
+const INITIAL_NEWS = [
+  {
+    id: 0,
+    img_url: "",
+    title: "",
+    date: "",
+    info: "",
+  },
+];
+
+export { INITIAL_REGISTRIES, INITIAL_NEWS };

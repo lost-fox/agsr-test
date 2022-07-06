@@ -1,4 +1,4 @@
-export interface News {
+export interface NewsType {
   id: number;
   img_url: string;
   title: string;
@@ -6,6 +6,6 @@ export interface News {
   info: string;
 }
 
-export interface NewsType {
-  news: News[];
+export interface NewsTypeProps {
+  value: NewsType;
 }

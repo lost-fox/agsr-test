@@ -1,12 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { INITIAL_NEWS } from "../constants";
 import { NewsType } from "../interfaces/NewsType";
 
 interface InitialStateType {
-  news: string | NewsType;
+  news: NewsType[];
 }
 
 const initialState: InitialStateType = {
-  news: "",
+  news: INITIAL_NEWS,
 };
 
 const newsSlice = createSlice({
