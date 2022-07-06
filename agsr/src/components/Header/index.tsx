@@ -1,9 +1,9 @@
 import logoImg from "../../assets/img/logo.png";
-import searchImg from "../../assets/icon/search.svg";
 import calendarImg from "../../assets/icon/notes-calendar.svg";
 import userImg from "../../assets/icon/user-round.svg";
 import arrowImg from "../../assets/icon/upper-arrow.svg";
 import "./style.css";
+import { Search } from "../Search";
 
 export const Header: React.FC = () => {
   return (
@@ -12,20 +12,12 @@ export const Header: React.FC = () => {
         <div className="header-logo">
           <img className="header-logo__img" src={logoImg} alt="logo" />
         </div>
-        <div className="header-search">
-          <img
-            className="header-search__icon"
-            src={searchImg}
-            alt="search icon"
-          />
-          <input
-            className="header-search__input"
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Поиск"
-          />
-        </div>
+        <Search
+          divClassName="header-search"
+          imgClassName="header-search__icon"
+          inputClassName="header-search__input"
+          placeholder="Поиск"
+        />
       </div>
       <div className="header-right flex">
         <div className="header-calendar">
