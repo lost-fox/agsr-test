@@ -1,0 +1,29 @@
+.doc{
+   padding: 20px 0;
+   align-items: center;
+   border-bottom: 1px solid #EDEDF4;
+}
+
+.doc__category{
+   width: 170px;
+}
+
+.doc__title{
+   width: 390px;
+}
+
+.doc__date{
+   width: 70px;
+}
+
+.doc__number{
+   width: 55px;
+}
+
+.doc__file-link{
+   width: 165px;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 10px;
+   color: #009CB4;
+}

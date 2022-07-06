@@ -1,4 +1,4 @@
-export interface Docs {
+export interface DocsType {
   id: number;
   category: string;
   title: string;
@@ -7,6 +7,6 @@ export interface Docs {
   file: string;
 }
 
-export interface DocsType {
-  docs: Docs[];
+export interface DocsTypeProps {
+  value: DocsType;
 }

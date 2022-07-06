@@ -13,7 +13,7 @@ export const Registry: React.FC<RegistriesTypeProps> = (props) => {
         {class_software}
       </div>
       <div className="regictry__item regictry__date">{date}</div>
-      <a className="regictry__item regictry__url" href={url}>
+      <a className="regictry__item regictry__url" href={url} download={true}>
         Скачать
       </a>
     </div>

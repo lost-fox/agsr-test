@@ -13,6 +13,7 @@ import { setDocs } from "../../state/docsSlice";
 import { setQuestions } from "../../state/questionsSlice";
 import { Registries } from "./Registries";
 import { News } from "./News";
+import { Docs } from "./Docs";
 
 export const Main: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -57,6 +58,7 @@ export const Main: React.FC = () => {
       </div>
       <Registries />
       <News />
+      <Docs />
     </div>
   );
 };

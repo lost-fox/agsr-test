@@ -19,4 +19,15 @@ const INITIAL_NEWS = [
   },
 ];
 
-export { INITIAL_REGISTRIES, INITIAL_NEWS };
+const INITIAL_DOCS = [
+  {
+    id: 0,
+    category: "",
+    title: "",
+    date: "",
+    number: "",
+    file: "",
+  },
+];
+
+export { INITIAL_REGISTRIES, INITIAL_NEWS, INITIAL_DOCS };

@@ -1,12 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { INITIAL_DOCS } from "../constants";
 import { DocsType } from "../interfaces/DocsType";
 
 interface InitialStateType {
-  docs: string | DocsType;
+  docs: DocsType[];
 }
 
 const initialState: InitialStateType = {
-  docs: "",
+  docs: INITIAL_DOCS,
 };
 
 const docsSlice = createSlice({

@@ -22,11 +22,13 @@
 .registries-elements{
    margin: 40px auto;
    border-top: 1px solid #EDEDF4;
+   
 }
 
 .registries-elements__categories{
    padding: 20px 0;
    flex-wrap: nowrap;
+   border-bottom: 1px solid #EDEDF4;
 }
 
 .category__button{
