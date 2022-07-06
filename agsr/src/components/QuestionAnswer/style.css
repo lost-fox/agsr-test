@@ -1,0 +1,35 @@
+details{
+   margin-bottom: 20px; 
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 27px;
+   color: #676A71;
+}
+
+.answer-text{
+  padding-top: 20px; 
+  padding-left: 32px;
+  width: 572px;
+}
+
+summary{
+   display: flex;
+   align-items: center;
+   height: 32px;
+   gap: 10px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 25px;
+   color: #4D4D4F; 
+}
+
+summary::before{
+   padding-top: 5px;
+   content: url(../../assets/icon/plus.svg);
+}
+
+details[open] summary::before{
+   transform: rotate(-45deg);
+}

@@ -124,6 +124,7 @@
 }
 
 .footer-contacts__link{
+   display: block;
    margin-top: 10px;
    font-style: normal;
    font-weight: 500;

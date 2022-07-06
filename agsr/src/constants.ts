@@ -30,4 +30,12 @@ const INITIAL_DOCS = [
   },
 ];
 
-export { INITIAL_REGISTRIES, INITIAL_NEWS, INITIAL_DOCS };
+const INITIAL_QUESTION = [
+  {
+    id: 0,
+    question: "",
+    answer: "",
+  },
+];
+
+export { INITIAL_REGISTRIES, INITIAL_NEWS, INITIAL_DOCS, INITIAL_QUESTION };

@@ -1,12 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { INITIAL_QUESTION } from "../constants";
 import { QuestionType } from "../interfaces/QuestionType";
 
 interface InitialStateType {
-  questions: string | QuestionType;
+  questions: QuestionType[];
 }
 
 const initialState: InitialStateType = {
-  questions: "",
+  questions: INITIAL_QUESTION,
 };
 
 const questionsSlice = createSlice({

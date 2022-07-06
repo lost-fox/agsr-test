@@ -1,9 +1,9 @@
-export interface Questions {
+export interface QuestionType {
   id: number;
   question: string;
-  answer: string;
+  answer: string | string[];
 }
 
-export interface QuestionType {
-  questions: Questions[];
+export interface QuestionsTypeProps {
+  value: QuestionType;
 }

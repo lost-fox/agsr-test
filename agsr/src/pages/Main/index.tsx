@@ -14,6 +14,7 @@ import { setQuestions } from "../../state/questionsSlice";
 import { Registries } from "./Registries";
 import { News } from "./News";
 import { Docs } from "./Docs";
+import { Questions } from "./Question";
 
 export const Main: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -59,6 +60,7 @@ export const Main: React.FC = () => {
       <Registries />
       <News />
       <Docs />
+      <Questions />
     </div>
   );
 };
