@@ -1,6 +1,5 @@
 .element-inputs{
    position: relative;
-   margin-bottom: 20px;
 }
 
 .element-inputs input{
@@ -40,6 +39,14 @@
    top: 40px;
    opacity: 0;
   opacity: 1;
+}
+
+.element-inputs-icons{
+   position: absolute;
+   width: 24px;
+   height: 24px;
+   top: 43px;
+   left: 324px;
 }
 
 .element-inputs__error{

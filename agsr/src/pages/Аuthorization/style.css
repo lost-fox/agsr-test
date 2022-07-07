@@ -46,6 +46,7 @@
 }
 
 .auth-input__input{
+   margin-bottom: 20px;
    width: 100%;
    padding: 17px 18px;
    height: 56px;

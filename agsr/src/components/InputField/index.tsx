@@ -13,6 +13,8 @@ export const InputField: React.FC<InputFieldProps> = (props) => {
     placeholder,
     error,
     onChange,
+    value,
+    children,
   } = props;
 
   const imgClass = imgClassName ? imgClassName : "elements-inputs__icon";
@@ -25,7 +27,9 @@ export const InputField: React.FC<InputFieldProps> = (props) => {
         id={id}
         placeholder={placeholder}
         onChange={onChange}
+        value={value}
       />
+      <p className="element-inputs-icons">{children}</p>
       <p className="element-inputs__error">{error}</p>
       <label className={labelClassName} htmlFor={id}>
         {title}

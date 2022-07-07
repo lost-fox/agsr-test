@@ -1,0 +1,32 @@
+.profile-section{
+   padding: 20px;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 10px;
+   width: 270px;
+   height: 72px;
+   border-width: 0px 1px 1px 1px;
+   border-style: solid;
+   border-color: #EDEDF4;
+   background-color: #ffffff;
+}
+
+.profile-section__title{
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 25px;
+   color: #676A71;
+}
+.profile-section__title--exit{
+   color: #E0371F;
+}
+
+.profile-section--action{
+   border: 1px solid #009CB4;
+   border-radius: 5px;
+}
+
+.profile-section__title--active{
+   color:#009CB4;
+}
