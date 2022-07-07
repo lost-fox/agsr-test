@@ -1,15 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { INITIAL_USER } from "../constants";
+import { UserType } from "../interfaces/UserType";
 
 interface InitialStateType {
   auth: boolean;
-  userName: string;
-  avatar: string;
+  user: UserType;
 }
 
 const initialState: InitialStateType = {
   auth: false,
-  userName: "",
-  avatar: "",
+  user: INITIAL_USER,
 };
 
 const userSlice = createSlice({
@@ -19,8 +19,11 @@ const userSlice = createSlice({
     setAuth(state, action) {
       state.auth = action.payload;
     },
+    setUserData(state, action) {
+      state.user = action.payload;
+    },
   },
 });
 
-export const { setAuth } = userSlice.actions;
+export const { setAuth, setUserData } = userSlice.actions;
 export default userSlice.reducer;

@@ -4,8 +4,29 @@ import userImg from "../../assets/icon/user-round.svg";
 import arrowImg from "../../assets/icon/upper-arrow.svg";
 import "./style.css";
 import { Search } from "../Search";
+import { useAppSelector } from "../../hooks/stateHooks";
+import { useNavigate } from "react-router-dom";
+import { Routes } from "../../models/routes";
+import { UserType } from "../../interfaces/UserType";
 
 export const Header: React.FC = () => {
+  const navigate = useNavigate();
+  const isAuth: boolean = useAppSelector((state) => state.userReducer.auth);
+  const user: UserType = useAppSelector((state) => state.userReducer.user);
+
+  const { avatar, name, surname, notification } = user;
+
+  const handlerButton = () => {
+    isAuth ? navigate(Routes.Profile) : navigate(Routes.Auth);
+  };
+
+  const userAvatar = avatar.length ? process.env.PUBLIC_URL + avatar : userImg;
+  const userName = name.length ? `${name} ${surname}` : "Вход в аккаунт";
+  const classNotificationIcon = notification
+    ? "header-notification__icon header-notification--active"
+    : "header-notification__icon";
+  const opacityCount = notification ? "1" : "0";
+
   return (
     <div className="header-container flex">
       <div className="header-left flex">
@@ -28,9 +49,14 @@ export const Header: React.FC = () => {
           />
         </div>
         <div className="header-notification">
-          <div className="header-notification__count">4</div>
+          <div
+            style={{ opacity: opacityCount }}
+            className="header-notification__count"
+          >
+            {notification}
+          </div>
           <svg
-            className="header-notification__icon header-notification--active"
+            className={classNotificationIcon}
             width="22"
             height="28"
             viewBox="0 0 22 28"
@@ -44,11 +70,11 @@ export const Header: React.FC = () => {
           </svg>
         </div>
         <div className="header-line"></div>
-        <div className="header-profile flex">
+        <div className="header-profile flex" onClick={handlerButton}>
           <div className="header-profile__avatar">
-            <img src={userImg} alt="avatar icon" />
+            <img src={userAvatar} alt="avatar icon" />
           </div>
-          <div className="header-profile__title">Вход в аккаунт</div>
+          <div className="header-profile__title">{userName}</div>
           <div className="header-profile__arrow">
             <img src={arrowImg} alt="arrow icon" />
           </div>

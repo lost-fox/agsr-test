@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import arrowLeftImg from "../../assets/icon/arrow-left.svg";
 import { InputField } from "../../components/InputField";
 import { USER_AUTH } from "../../constants";
+import { useAppDispatch } from "../../hooks/stateHooks";
+import { Routes } from "../../models/routes";
+import { setAuth, setUserData } from "../../state/userSlice";
+import userData from "../../data/user.json";
 import "./style.css";
 
 export const Authorization = () => {
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const [isValidUserName, setValidUserName] = useState<boolean>(false);
   const [username, setUserName] = useState<string>("auth-input__input");
   const [errorUserName, setErrorUserName] = useState<boolean>(false);
@@ -12,6 +19,13 @@ export const Authorization = () => {
   const [isValidPassword, setValidPassword] = useState<boolean>(false);
   const [password, setPassword] = useState<string>("auth-input__input");
   const [errorPassword, setErrorPassword] = useState<boolean>(false);
+
+  const [isValidButton, setValidButton] = useState<boolean>(true);
+
+  useEffect(() => {
+    const isValid = isValidPassword && isValidUserName;
+    setValidButton(!isValid);
+  }, [isValidPassword, isValidUserName]);
 
   const validUserName = (e: React.ChangeEvent<HTMLInputElement>) => {
     const username = e.target.value;
@@ -51,10 +65,20 @@ export const Authorization = () => {
     }
   };
 
+  const authHandler = () => {
+    dispatch(setAuth(true));
+    dispatch(setUserData(userData));
+    navigate(Routes.Main);
+  };
+
+  const goToMainButton = () => {
+    navigate(Routes.Main);
+  };
+
   return (
     <>
       <div className="auth-container">
-        <button className="go-to-main flex">
+        <button className="go-to-main flex" onClick={goToMainButton}>
           <img
             className="go-to-main__icon"
             src={arrowLeftImg}
@@ -112,7 +136,13 @@ export const Authorization = () => {
               Запомнить меня на этом компьютере
             </p>
           </div>
-          <button className="button auth-elements__button">Вход</button>
+          <button
+            className="button auth-elements__button"
+            disabled={isValidButton}
+            onClick={authHandler}
+          >
+            Вход
+          </button>
           <a className="auth-elements__link" href="#">
             Забыли свой пароль?
           </a>

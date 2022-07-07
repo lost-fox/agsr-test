@@ -38,6 +38,17 @@ const INITIAL_QUESTION = [
   },
 ];
 
+const INITIAL_USER = {
+  avatar: "",
+  name: "",
+  surname: "",
+  patronymic: "",
+  country: "",
+  city: "",
+  phote: "",
+  notification: 0,
+};
+
 const USER_AUTH = {
   login: "3axaar",
   password: "1234567890",
@@ -48,5 +59,6 @@ export {
   INITIAL_NEWS,
   INITIAL_DOCS,
   INITIAL_QUESTION,
+  INITIAL_USER,
   USER_AUTH,
 };

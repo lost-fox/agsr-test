@@ -88,6 +88,11 @@
    color: #FFFFFF;
 }
 
+.auth-elements__button:disabled{
+   background-color: #676A71;
+   cursor: not-allowed;
+}
+
 .auth-elements__link{
    display: block;
    margin-top: 20px;
