@@ -1,0 +1,54 @@
+.element-inputs{
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.element-inputs input{
+   margin-top: 24px;
+}
+
+.element-inputs input:focus{
+   outline: none;
+   border: 1px solid #009CB4;
+   border-radius: 5px;
+}
+
+.element-inputs label{
+   position: absolute;
+   top: 0px;
+}
+
+.label--error{
+   color: #E0371F !important;
+}
+
+.input--error{
+   border: 1px solid #E0371F !important;
+}
+
+.element-inputs input:focus ~ label, label:focus{
+   color: #009CB4;
+}
+
+.elements-inputs__icon{
+   display: none;
+}
+
+.elements-inputs__icon--correct{
+   position: absolute;
+   left: 442px;
+   top: 40px;
+   opacity: 0;
+  opacity: 1;
+}
+
+.element-inputs__error{
+   display: block;
+   margin-top: 5px;
+   margin-bottom: 20px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 16px;
+   color: #E0371F;
+}

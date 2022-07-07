@@ -50,7 +50,7 @@ export const Main: React.FC = () => {
             inputClassName="main-search__input"
             placeholder="Искать реестр..."
           >
-            <button className="main-search__button">Искать</button>
+            <button className="button main-search__button">Искать</button>
           </Search>
         </div>
         <div className="main-info-right">

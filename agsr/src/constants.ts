@@ -38,4 +38,15 @@ const INITIAL_QUESTION = [
   },
 ];
 
-export { INITIAL_REGISTRIES, INITIAL_NEWS, INITIAL_DOCS, INITIAL_QUESTION };
+const USER_AUTH = {
+  login: "3axaar",
+  password: "1234567890",
+};
+
+export {
+  INITIAL_REGISTRIES,
+  INITIAL_NEWS,
+  INITIAL_DOCS,
+  INITIAL_QUESTION,
+  USER_AUTH,
+};

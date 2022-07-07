@@ -13,7 +13,7 @@ export const News: React.FC = () => {
           <NewsCard key={el.id} value={el} />
         ))}
       </div>
-      <button className="news-button">Показать все</button>
+      <button className="button news-button">Показать все</button>
     </div>
   );
 };
